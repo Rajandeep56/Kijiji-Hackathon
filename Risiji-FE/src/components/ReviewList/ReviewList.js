@@ -1,31 +1,48 @@
+import { useEffect, useState } from 'react';
 import Review from './Review';
 import './ReviewList.scss';
+import axios from 'axios';
+import { useParams } from 'react-router-dom';
+import TopBar from '../Rating/Rating';
+import '../../App.css';
 
 const ReviewList = () => {
-  const reviews = [
-    {
-      avatar: '',
-      userName: 'Bo Yang',
-      category: 'Home - Indoor',
-      scores: 5,
-    },
-    {
-      image: '',
-      category: 'Home Appliances',
-      userName: 'Petr K',
-      scores: 4,
-    },
-  ];
+  const [reveiwList, setReviewList] = useState();
+  const { userId } = useParams();
+
+  const getReviewList = async () => {
+    console.log(345);
+    const res = await axios.get(
+      `http://localhost:8000/contact/${userId ?? 1001}`
+    );
+    console.log('data', res.data);
+    setReviewList(res.data);
+  };
+
+  useEffect(() => {
+    getReviewList();
+  }, []);
 
   return (
-    <section className="reviews">
-      <p className="reviews__count">26 Reviews</p>
-      <section className="reviews__review">
-        {reviews.map((review) => {
-          return <Review review={review} />;
-        })}
+    <>
+      <TopBar />
+      <section className="reviews">
+        {reveiwList ? (
+          <>
+            <p className="reviews__count">
+              {reveiwList?.reviewContent?.length} Reviews
+            </p>
+            <section className="reviews__review">
+              {reveiwList.reviewContent.map((review) => {
+                return <Review review={review} />;
+              })}
+            </section>
+          </>
+        ) : (
+          <h1>Loading...</h1>
+        )}
       </section>
-    </section>
+    </>
   );
 };
 

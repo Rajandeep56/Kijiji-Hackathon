@@ -1,0 +1,26 @@
+.review {
+  margin-top: 1rem;
+  display: flex;
+  width: 100%;
+  padding: 1rem 0;
+  border-top: 1px solid #ececee;
+}
+.review__avatar {
+  width: 50px;
+  height: 50px;
+  background-color: aquamarine;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+}
+.review__detail {
+  padding-left: 3rem;
+}
+.review__name {
+  color: #155e9b;
+  font-weight: 600;
+}
+.review__category > * {
+  color: #6f727f;
+  font-weight: 600;
+}/*# sourceMappingURL=Review.css.map */

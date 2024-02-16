@@ -1,0 +1,20 @@
+.ReviewCard {
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d2d3d7;
+  border-radius: 10px;
+
+  &__avatar {
+    width: 50px;
+    height: 50px;
+    background-color: aquamarine;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    margin: 1.5rem 0;
+  }
+}

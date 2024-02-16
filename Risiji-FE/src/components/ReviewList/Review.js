@@ -2,9 +2,10 @@ import star from '../../assets/star.png';
 import './Review.scss';
 
 const Review = ({ review }) => {
+
   const stars = [];
   const createStarsArr = () => {
-    for (let i = 0; i < review.scores; i++) {
+    for (let i = 0; i < review.score; i++) {
       stars.push(<img src={star} />);
     }
   };
@@ -13,9 +14,11 @@ const Review = ({ review }) => {
 
   return (
     <section className="review">
-      <div className="review__avatar">{review.userName.charAt(0)}</div>
+      <div className="review__avatar">
+        {review.reviewedBy.userName.charAt(0)}
+      </div>
       <div className="review__detail">
-        <p className="review__name">{review.userName}</p>
+        <p className="review__name">{review.reviewedBy.userName}</p>
         <div className="review__category">
           <span>Buyer ·</span>
           <span>Home - Indoor</span>

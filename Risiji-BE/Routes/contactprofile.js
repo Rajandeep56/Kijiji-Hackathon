@@ -1,35 +1,37 @@
-const express = require("express");
+const express = require('express');
 const app = express.Router();
-const fs = require("fs");
-const { v4: uuidv4 } = require('uuid');
-
+const fs = require('fs');
+const cors = require('cors');
 
 const fetchContactInfo = () => {
-  const filePath = "./data/user-data.json";
+  const filePath = './data/user-data.json';
 
   try {
     const rawData = fs.readFileSync(filePath);
     return JSON.parse(rawData);
   } catch (error) {
-    console.error("Error reading user data:", error);
+    console.error('Error reading user data:', error);
     return [];
   }
 };
 
+app.use(cors);
+
 app.get('/:id', (req, res) => {
-    const { id } = req.params;
-    const contactMatch = fetchContactInfo().find((user) => user.userId == id);
+  const { id } = req.params;
+  const contactMatch = fetchContactInfo().find((user) => user.userId == id);
 
-    console.log("Contact Match:", contactMatch);
-    console.log("Requested ID:", id);
-    console.log("All Users:", fetchContactInfo());
+  console.log('Contact Match:', contactMatch);
+  console.log('Requested ID:', id);
+  console.log('All Users:', fetchContactInfo());
 
-    if (!contactMatch) {
-        return res.status(404).json({ error: "User not found. Please check and try again" });
-    }
+  if (!contactMatch) {
+    return res
+      .status(404)
+      .json({ error: 'User not found. Please check and try again' });
+  }
 
-    return res.status(200).json(contactMatch);
-    
+  return res.status(200).json(contactMatch);
 });
 app.patch('/:id/incrementTotalReviews', (req, res) => {
   const { id } = req.params;

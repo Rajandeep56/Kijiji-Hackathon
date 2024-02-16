@@ -1,6 +1,7 @@
 [
   {
     "userId": 1001,
+    "credit": 50,
     "userImag": "",
     "userName": "Summer Teng",
     "avgReply": "5 hours",
