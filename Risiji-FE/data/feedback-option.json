@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "label": "Easy location",
+    "type": "POSITIVE"
+  },
+  {
+    "id": 2,
+    "label": "Easy transaction",
+    "type": "POSITIVE"
+  },
+  {
+    "id": 3,
+    "label": "Showed up on time",
+    "type": "POSITIVE"
+  },
+  {
+    "id": 4,
+    "label": "Friendly",
+    "type": "POSITIVE"
+  },
+  {
+    "id": 5,
+    "label": "Item as described",
+    "type": "POSITIVE"
+  },
+  {
+    "id": 6,
+    "label": "Showed up late",
+    "type": "NEGATIVE"
+  },
+  {
+    "id": 7,
+    "label": "Item not match",
+    "type": "NEGATIVE"
+  },
+  {
+    "id": 8,
+    "label": "Rude",
+    "type": "NEGATIVE"
+  }
+]

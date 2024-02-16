@@ -1,0 +1,342 @@
+[
+  {
+    "userId": 1001,
+    "userImag": "",
+    "userName": "Summer Teng",
+    "avgReply": "5 hours",
+    "replyRate": "100%",
+    "created": 1706749808,
+    "reviewSummary": {
+      "summary": {
+        "sumScore": 4.8,
+        "totalReviews": 5
+      },
+      "summaryDetails": [
+        {
+          "direction": "B2S",
+          "scoreSummary": [
+            {
+              "count": 2,
+              "score": 5
+            }
+          ]
+        },
+        {
+          "direction": "S2B",
+          "scoreSummary": [
+            {
+              "count": 1,
+              "score": 4
+            }
+          ]
+        }
+      ]
+    },
+    "reviewContent": [
+      {
+        "categoryName": "Arts & Collectibles",
+        "dateCreated": 1586040080,
+        "direction": "B2S",
+        "feedbackOptions": [
+          {
+            "id": 4,
+            "label": "Friendly",
+            "type": "POSITIVE"
+          },
+          {
+            "id": 5,
+            "label": "Item as described",
+            "type": "POSITIVE"
+          },
+          {
+            "id": 2,
+            "label": "Easy transaction",
+            "type": "POSITIVE"
+          },
+          {
+            "id": 3,
+            "label": "Showed up on time",
+            "type": "POSITIVE"
+          }
+        ],
+        "id": 1,
+        "reviewedBy": {
+          "userName": "Jacqueline",
+          "userId": 1002,
+          "userImag": null
+        },
+        "score": 5
+      },
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1707354762,
+        "direction": "B2S",
+        "feedbackOptions": [],
+        "id": 2,
+        "reviewedBy": {
+          "userName": "Alice",
+          "id": 1004,
+          "userImag": null
+        },
+        "score": 5
+      },
+      {
+        "categoryName": "Sports",
+        "dateCreated": 1707181962,
+        "direction": "B2S",
+        "feedbackOptions": [],
+        "id": 3,
+        "reviewedBy": {
+          "userName": "Bob",
+          "id": 1005,
+          "userImag": null
+        },
+        "score": 5
+      },
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1707873162,
+        "direction": "B2S",
+        "feedbackOptions": [],
+        "id": 4,
+        "reviewedBy": {
+          "userName": "Sam",
+          "id": 1006,
+          "userImag": null
+        },
+        "score": 5
+      },
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1707873162,
+        "direction": "S2B",
+        "feedbackOptions": [],
+        "id": 5,
+        "reviewedBy": {
+          "userName": "Jason",
+          "id": 1007,
+          "userImag": null
+        },
+        "score": 4
+      }
+    ]
+  },
+  {
+    "userId": 1002,
+    "userImag": "",
+    "userName": "Jacqueline Fong",
+    "avgReply": null,
+    "replyRate": "100%",
+    "created": 1704071408,
+    "reviewSummary": {
+      "summary": {},
+      "summaryDetails": []
+    },
+    "reviewContent": []
+  },
+  {
+    "userId": 1003,
+    "userImag": "",
+    "userName": "Rajandeep Kaur",
+    "avgReply": "2 hours",
+    "replyRate": "100%",
+    "created": 1705453808,
+    "reviewSummary": {
+      "summary": {
+        "sumScore": 4.7,
+        "totalReviews": 9
+      },
+      "summaryDetails": [
+        {
+          "direction": "B2S",
+          "scoreSummary": [
+            {
+              "count": 8,
+              "score": 5
+            }
+          ]
+        },
+        {
+          "direction": "S2B",
+          "scoreSummary": [
+            {
+              "count": 1,
+              "score": 4
+            }
+          ]
+        }
+      ]
+    },
+    "reviewContent": [
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1707441162,
+        "direction": "S2B",
+        "feedbackOptions": [],
+        "id": 6,
+        "reviewedBy": {
+          "displayName": "Summer",
+          "id": 1001,
+          "userImag": null
+        },
+        "score": 4
+      },
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1707441162,
+        "direction": "S2B",
+        "feedbackOptions": [],
+        "id": 7,
+        "reviewedBy": {
+          "displayName": "Jason",
+          "id": 1007,
+          "userImag": null
+        },
+        "score": 5
+      },
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1707786762,
+        "direction": "S2B",
+        "feedbackOptions": [],
+        "id": 8,
+        "reviewedBy": {
+          "displayName": "Summer",
+          "id": 1001,
+          "userImag": null
+        },
+        "score": 5
+      },
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1707786762,
+        "direction": "S2B",
+        "feedbackOptions": [],
+        "id": 9,
+        "reviewedBy": {
+          "displayName": "Jacqueline Fong",
+          "id": 1002,
+          "userImag": null
+        },
+        "score": 5
+      },
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1707527562,
+        "direction": "S2B",
+        "feedbackOptions": [],
+        "id": 10,
+        "reviewedBy": {
+          "displayName": "Summer",
+          "id": 1001,
+          "userImag": null
+        },
+        "score": 5
+      },
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1707527562,
+        "direction": "S2B",
+        "feedbackOptions": [],
+        "id": 11,
+        "reviewedBy": {
+          "displayName": "Summer",
+          "id": 1001,
+          "userImag": null
+        },
+        "score": 5
+      },
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1706058762,
+        "direction": "S2B",
+        "feedbackOptions": [],
+        "id": 12,
+        "reviewedBy": {
+          "displayName": "Summer",
+          "id": 1001,
+          "userImag": null
+        },
+        "score": 5
+      },
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1706058762,
+        "direction": "S2B",
+        "feedbackOptions": [],
+        "id": 13,
+        "reviewedBy": {
+          "displayName": "Summer",
+          "id": 1001,
+          "userImag": null
+        },
+        "score": 5
+      },
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1706058762,
+        "direction": "S2B",
+        "feedbackOptions": [],
+        "id": 14,
+        "reviewedBy": {
+          "displayName": "Bob",
+          "id": 1006,
+          "userImag": null
+        },
+        "score": 5
+      }
+    ]
+  },
+  {
+    "userId": 1004,
+    "userImag": "",
+    "userName": "Alice Chen",
+    "avgReply": null,
+    "replyRate": "100%",
+    "created": 1701652208,
+    "reviewSummary": {
+      "summary": {},
+      "summaryDetails": []
+    },
+    "reviewContent": []
+  },
+  {
+    "userId": 1005,
+    "userImag": "",
+    "userName": "Bob Cruise",
+    "avgReply": null,
+    "replyRate": "100%",
+    "created": 1656810608,
+    "reviewSummary": {
+      "summary": {},
+      "summaryDetails": []
+    },
+    "reviewContent": []
+  },
+  {
+    "userId": 1006,
+    "userImag": "",
+    "userName": "Sam Wong",
+    "avgReply": null,
+    "replyRate": "100%",
+    "created": 1699837505,
+    "reviewSummary": {
+      "summary": {},
+      "summaryDetails": []
+    },
+    "reviewContent": []
+  },
+  {
+    "userId": 1007,
+    "userImag": "",
+    "userName": "Jason Cage",
+    "avgReply": null,
+    "replyRate": "100%",
+    "created": 1692061505,
+    "reviewSummary": {
+      "summary": {},
+      "summaryDetails": []
+    },
+    "reviewContent": []
+  }
+]
