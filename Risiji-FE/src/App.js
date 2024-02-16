@@ -12,7 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ReviewList />} />
           <Route path="/:userId" element={<ReviewList />} />
-          <Route path="/Listing" element={<ListingList />} />
+          <Route path="/:userId/Listing" element={<ListingList />} />
         </Routes>
       </BrowserRouter>
     </>

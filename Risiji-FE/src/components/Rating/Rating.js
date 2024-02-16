@@ -1,31 +1,31 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import "./Rating.scss";
-import Card from "../Card/Card";
-import backArrow from "../../assets/icons/backArrow.png";
-import goldBadge from "../../assets/badges/goldBadge.png";
-import silverBadge from "../../assets/badges/silverBadge.png";
-import bronzeBadge from "../../assets/badges/bronzeBadge.png";
+import './Rating.scss';
+import Card from '../Card/Card';
+import backArrow from '../../assets/icons/backArrow.png';
+import goldBadge from '../../assets/badges/goldBadge.png';
+import silverBadge from '../../assets/badges/silverBadge.png';
+import bronzeBadge from '../../assets/badges/bronzeBadge.png';
 
-const TopBar = () => {
+const TopBar = ({ userId }) => {
   const [userData, setUserData] = useState(null);
 
   useEffect(() => {
-    const userId = 1002;
-    axios.get(`http://localhost:8000/contact/${userId}`)
-      .then(response => {
+    axios
+      .get(`http://localhost:8000/contact/${userId ?? 1001}`)
+      .then((response) => {
         setUserData(response.data);
       })
-      .catch(error => {
+      .catch((error) => {
         console.error('Error fetching user data:', error);
       });
-  }, []); 
+  }, []);
 
   if (!userData) {
-    return null; 
+    return null;
   }
-console.log(userData)
-  const { credits, userName, reviewSummary,avgReply,replyRate } = userData;
+  console.log(userData);
+  const { credits, userName, reviewSummary, avgReply, replyRate } = userData;
   const badgeCircle = userName.charAt(0).toUpperCase();
 
   const pointsAway = 50 - credits;
@@ -33,12 +33,17 @@ console.log(userData)
   if (credits < 10) {
     badgeImage = null;
   } else if (credits >= 10 && credits < 30) {
-    badgeImage = <img src={bronzeBadge} alt="bronze badge" className="bronze-badge" />;
+    badgeImage = (
+      <img src={bronzeBadge} alt="bronze badge" className="bronze-badge" />
+    );
   } else if (credits >= 30 && credits <= 40) {
-    badgeImage = <img src={silverBadge} alt="silver badge" className="silver-badge" />;
-  }
-  else if (credits >= 30 && credits <= 40) {
-    badgeImage = <img src={goldBadge} alt="gold badge" className="gold-badge" />;
+    badgeImage = (
+      <img src={silverBadge} alt="silver badge" className="silver-badge" />
+    );
+  } else if (credits >= 30 && credits <= 40) {
+    badgeImage = (
+      <img src={goldBadge} alt="gold badge" className="gold-badge" />
+    );
   }
   return (
     <Card>
