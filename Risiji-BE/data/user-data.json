@@ -178,7 +178,7 @@
     "userId": 1002,
     "userImag": "",
     "userName": "Jacqueline Fong",
-    "avgReply": null,
+    "avgReply": "24 hours",
     "replyRate": "100%",
     "created": 1704071408,
     "reviewSummary": {
@@ -398,7 +398,7 @@
         "score": 5
       }
     ],
-    "credits": 0
+    "credits": 20
   },
   {
     "userId": 1003,
