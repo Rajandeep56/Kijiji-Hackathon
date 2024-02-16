@@ -5,7 +5,7 @@ import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import TopBar from '../Rating/Rating';
 import '../../App.css';
-
+import { Link } from 'react-router-dom';
 const ReviewList = () => {
   const [reveiwList, setReviewList] = useState();
   const { userId } = useParams();
@@ -28,6 +28,11 @@ const ReviewList = () => {
       <section className="reviews">
         {reveiwList ? (
           <>
+          <div className='top-bar__user-listing'>
+        <Link to={`/${userId}/Listing`}>
+          Go to Listings
+          </Link>
+      </div>
             <p className="reviews__count">
               {reveiwList?.reviewSummary?.summary?.totalReviews} Reviews
             </p>
@@ -36,6 +41,7 @@ const ReviewList = () => {
                 return <Review review={review} />;
               })}
             </section>
+            
           </>
         ) : (
           <h1>Loading...</h1>
