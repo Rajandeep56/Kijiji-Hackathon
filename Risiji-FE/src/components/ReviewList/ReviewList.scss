@@ -13,3 +13,17 @@
     margin-top: 2rem;
   }
 }
+.top-bar__user-listing {
+  box-sizing: border-box;
+  background-color: #ffac33;
+  width: 8rem;
+  height:2rem;
+  display: flex;
+  border-radius: 2rem;
+  align-items: center;
+  align-content: center;
+  padding-left: 1rem;
+  a {
+    text-decoration: none; 
+  }
+}
