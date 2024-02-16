@@ -1,7 +1,6 @@
 [
   {
     "userId": 1001,
-    "credit": 50,
     "userImag": "",
     "userName": "Summer Teng",
     "avgReply": "5 hours",
@@ -9,8 +8,8 @@
     "created": 1706749808,
     "reviewSummary": {
       "summary": {
-        "sumScore": 4.8,
-        "totalReviews": 6
+        "sumScore": 4.4,
+        "totalReviews": 10
       },
       "summaryDetails": [
         {
@@ -119,8 +118,61 @@
           "userImag": null
         },
         "score": 4
+      },
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1708113324,
+        "direction": "B2S",
+        "feedbackOptions": [],
+        "id": "d2fe94d4-5e3a-4035-a63d-4facd13e9491",
+        "reviewedBy": {
+          "userName": "Risiji User",
+          "id": "8042f1e2-83dd-4b97-a662-bbfb5770009d",
+          "userImag": null
+        },
+        "score": 5
+      },
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1708113449,
+        "direction": "B2S",
+        "feedbackOptions": [],
+        "id": "637cc1cb-cd47-410b-9b45-758d4c5d7f8b",
+        "reviewedBy": {
+          "userName": "Risiji User",
+          "id": "177dfd4b-7f97-43dd-ad94-3238df15ee70",
+          "userImag": null
+        },
+        "score": 5
+      },
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1708113546,
+        "direction": "B2S",
+        "feedbackOptions": [],
+        "id": "058309eb-8aa1-41a3-ac8e-37b86047e684",
+        "reviewedBy": {
+          "userName": "Risiji User",
+          "id": "c524cb13-9461-4d02-ab90-18c30109eb35",
+          "userImag": null
+        },
+        "score": 5
+      },
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1708113548,
+        "direction": "B2S",
+        "feedbackOptions": [],
+        "id": "2d08f90a-8161-4ebc-ae36-80706e4320cd",
+        "reviewedBy": {
+          "userName": "Risiji User",
+          "id": "b2de557b-3ef1-40a4-b4f3-4224aa995c76",
+          "userImag": null
+        },
+        "score": 5
       }
-    ]
+    ],
+    "credits": 30
   },
   {
     "userId": 1002,
@@ -130,10 +182,223 @@
     "replyRate": "100%",
     "created": 1704071408,
     "reviewSummary": {
-      "summary": {},
+      "summary": {
+        "totalReviews": 15,
+        "sumScore": 4.3
+      },
       "summaryDetails": []
     },
-    "reviewContent": []
+    "reviewContent": [
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1708113334,
+        "direction": "B2S",
+        "feedbackOptions": [],
+        "id": "70ce3e5f-6f81-42a1-87ab-233b31bcd71f",
+        "reviewedBy": {
+          "userName": "Risiji User",
+          "id": "b5e46add-2b7f-4361-89dc-c59db8c07304",
+          "userImag": null
+        },
+        "score": 5
+      },
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1708113338,
+        "direction": "B2S",
+        "feedbackOptions": [],
+        "id": "279bd99d-3a74-4cfc-a7a4-c2a773125343",
+        "reviewedBy": {
+          "userName": "Risiji User",
+          "id": "c24a0f62-ae51-4ed1-987f-4302dcab0457",
+          "userImag": null
+        },
+        "score": 5
+      },
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1708113344,
+        "direction": "B2S",
+        "feedbackOptions": [],
+        "id": "4d2354e5-618a-4372-85a0-dcc8bf869c12",
+        "reviewedBy": {
+          "userName": "Risiji User",
+          "id": "b4e93fc4-1cab-407c-940b-dbd38d1a4e1b",
+          "userImag": null
+        },
+        "score": 5
+      },
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1708113348,
+        "direction": "B2S",
+        "feedbackOptions": [],
+        "id": "9d1af5c9-4bea-4ba5-9c59-a60c25471429",
+        "reviewedBy": {
+          "userName": "Risiji User",
+          "id": "fe377bfa-c5b5-4cdb-854d-9ee559a98a18",
+          "userImag": null
+        },
+        "score": 5
+      },
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1708113351,
+        "direction": "B2S",
+        "feedbackOptions": [],
+        "id": "c325a292-8cab-4d43-adff-033c47378213",
+        "reviewedBy": {
+          "userName": "Risiji User",
+          "id": "e09135c7-03d7-4eba-b268-d9f5dfe9ca6c",
+          "userImag": null
+        },
+        "score": 5
+      },
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1708113354,
+        "direction": "B2S",
+        "feedbackOptions": [],
+        "id": "22419331-c5ea-4543-a7df-e580576ffa76",
+        "reviewedBy": {
+          "userName": "Risiji User",
+          "id": "01b82269-8ea5-46a2-93d2-635f0c4a5013",
+          "userImag": null
+        },
+        "score": 5
+      },
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1708113356,
+        "direction": "B2S",
+        "feedbackOptions": [],
+        "id": "82b8924c-926a-4996-88b9-b20b443d4374",
+        "reviewedBy": {
+          "userName": "Risiji User",
+          "id": "f5c70c47-3bdd-4b6e-9c5b-7925208dd376",
+          "userImag": null
+        },
+        "score": 5
+      },
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1708113358,
+        "direction": "B2S",
+        "feedbackOptions": [],
+        "id": "74df0a8b-903f-4edf-a9ac-3d235cb333da",
+        "reviewedBy": {
+          "userName": "Risiji User",
+          "id": "43397972-bc38-420e-98e1-0b16a7fefafd",
+          "userImag": null
+        },
+        "score": 5
+      },
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1708113361,
+        "direction": "B2S",
+        "feedbackOptions": [],
+        "id": "17bbd702-b1d4-49c5-84d7-1345455ae20a",
+        "reviewedBy": {
+          "userName": "Risiji User",
+          "id": "0b99eff6-0295-4ca0-8f53-7d835c6cc7d0",
+          "userImag": null
+        },
+        "score": 5
+      },
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1708113367,
+        "direction": "B2S",
+        "feedbackOptions": [],
+        "id": "931c2524-2e9a-4b04-b47b-2cb9199c52b5",
+        "reviewedBy": {
+          "userName": "Risiji User",
+          "id": "ba122927-aabe-4139-bcbf-48be6cba634e",
+          "userImag": null
+        },
+        "score": 5
+      },
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1708113371,
+        "direction": "B2S",
+        "feedbackOptions": [],
+        "id": "fb740861-3aee-48f8-8f84-793a6a6fec13",
+        "reviewedBy": {
+          "userName": "Risiji User",
+          "id": "74d8c5b4-2299-4a9a-bc90-db62919f62a8",
+          "userImag": null
+        },
+        "score": 5
+      },
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1708113443,
+        "direction": "B2S",
+        "feedbackOptions": [],
+        "id": "f6e82985-0be5-452b-aca7-9518a63b2eff",
+        "reviewedBy": {
+          "userName": "Risiji User",
+          "id": "bf9b2022-de63-4001-b35c-f5e94935ee5c",
+          "userImag": null
+        },
+        "score": 5
+      },
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1708113560,
+        "direction": "B2S",
+        "feedbackOptions": [],
+        "id": "0b515f19-157f-44f7-9d93-6af8dbf0eb60",
+        "reviewedBy": {
+          "userName": "Risiji User",
+          "id": "a99eb99a-d1fa-4c87-a214-5139c430d749",
+          "userImag": null
+        },
+        "score": 5
+      },
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1708113563,
+        "direction": "B2S",
+        "feedbackOptions": [],
+        "id": "a07146fc-3085-4c7e-bed9-7903fdc2de41",
+        "reviewedBy": {
+          "userName": "Risiji User",
+          "id": "45d772be-f521-4fd0-b9bc-fcc32686a6a4",
+          "userImag": null
+        },
+        "score": 5
+      },
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1708113565,
+        "direction": "B2S",
+        "feedbackOptions": [],
+        "id": "014a7ffe-d17f-4eec-aa35-5e7dbeb1d1a3",
+        "reviewedBy": {
+          "userName": "Risiji User",
+          "id": "383a27ef-30fa-46b2-bea1-855415c72695",
+          "userImag": null
+        },
+        "score": 5
+      },
+      {
+        "categoryName": "Electronics",
+        "dateCreated": 1708113578,
+        "direction": "B2S",
+        "feedbackOptions": [],
+        "id": "d27e0f8f-6f07-4075-874f-2aa5b2aa4e81",
+        "reviewedBy": {
+          "userName": "Risiji User",
+          "id": "cac08fb9-e07a-49db-acd9-fdb83526f6cd",
+          "userImag": null
+        },
+        "score": 5
+      }
+    ],
+    "credits": 0
   },
   {
     "userId": 1003,
