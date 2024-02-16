@@ -29,7 +29,7 @@ const ReviewList = () => {
         {reveiwList ? (
           <>
             <p className="reviews__count">
-              {reveiwList?.reviewContent?.length} Reviews
+              {reveiwList?.reviewSummary?.summary?.totalReviews} Reviews
             </p>
             <section className="reviews__review">
               {reveiwList.reviewContent.map((review) => {

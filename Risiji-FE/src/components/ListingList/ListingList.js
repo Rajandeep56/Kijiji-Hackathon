@@ -49,7 +49,7 @@ const ListingList = () => {
     <>
       <TopBar userId={userId} />
       <section className="list-container">
-        <p className="list-container__review-count">26 listings</p>
+        <p className="list-container__review-count">2 listings</p>
         <section className="list-container__items">
           {products.map((product) => {
             return <ListItem product={product} handleClick={handleClick} />;
