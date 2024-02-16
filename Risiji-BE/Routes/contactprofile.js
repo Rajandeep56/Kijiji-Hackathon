@@ -31,47 +31,60 @@ app.get('/:id', (req, res) => {
     return res.status(200).json(contactMatch);
     
 });
-
-
 app.patch('/:id/incrementTotalReviews', (req, res) => {
-    const { id } = req.params;
-    const userData = fetchContactInfo();
+  const { id } = req.params;
+  const userData = fetchContactInfo();
 
-    const userIndex = userData.findIndex((user) => user.userId == id);
+  const userIndex = userData.findIndex((user) => user.userId == id);
 
-    if (userIndex === -1) {
-        return res.status(404).json({ error: "User not found. Please check and try again" });
-    }
+  if (userIndex === -1) {
+      return res.status(404).json({ error: "User not found. Please check and try again" });
+  }
 
-    userData[userIndex].reviewSummary.summary.totalReviews += 1;
+  userData[userIndex].reviewSummary.summary.totalReviews += 1;
 
-    const dummyReview = {
-        categoryName: "Electronics",
-        dateCreated: Math.floor(Date.now() / 1000),
-        direction: "B2S",
-        feedbackOptions: [],
-        id: uuidv4(), 
-        reviewedBy: {
-            userName: "Risiji User",
-            id: uuidv4(), 
-            userImag: null
-        },
-        score: 5 
-    };
+  const dummyReview = {
+      categoryName: "Electronics",
+      dateCreated: Math.floor(Date.now() / 1000),
+      direction: "B2S",
+      feedbackOptions: [],
+      id: uuidv4(), 
+      reviewedBy: {
+          userName: "Risiji User",
+          id: uuidv4(), 
+          userImag: null
+      },
+      score: 5 
+  };
 
-    userData[userIndex].reviewContent.push(dummyReview);
+  userData[userIndex].reviewContent.push(dummyReview);
 
-    const allScores = userData[userIndex].reviewContent.map(review => review.score);
-    const totalReviews = userData[userIndex].reviewSummary.summary.totalReviews;
-    console.log(totalReviews, totalReviews)
-    const newAverageScore = allScores.reduce((sum, score) => sum + score, 0) / totalReviews;
+  const allScores = userData[userIndex].reviewContent.map(review => review.score);
+  const totalReviews = userData[userIndex].reviewSummary.summary.totalReviews;
+  console.log(totalReviews, totalReviews)
+  const newAverageScore = allScores.reduce((sum, score) => sum + score, 0) / totalReviews;
 
-    userData[userIndex].reviewSummary.summary.sumScore = parseFloat(newAverageScore.toFixed(1));
+  userData[userIndex].reviewSummary.summary.sumScore = parseFloat(newAverageScore.toFixed(1));
 
-    fs.writeFileSync('./data/user-data.json', JSON.stringify(userData, null, 2));
+  const newCredits = calculateCredits(newAverageScore);
+  userData[userIndex].credits = newCredits;
 
-    return res.status(200).json({ message: "Total reviews incremented successfully", user: userData[userIndex] });
+  fs.writeFileSync('./data/user-data.json', JSON.stringify(userData, null, 2));
+
+  return res.status(200).json({ message: "Total reviews incremented successfully", user: userData[userIndex] });
 });
+
+function calculateCredits(averageScore) {
+  if (averageScore >= 3.0 && averageScore < 3.5) {
+      return 10;
+  } else if (averageScore >= 3.5 && averageScore < 4.8) {
+      return 30;
+  } else if (averageScore >= 4.8 && averageScore <=5.0) {
+      return 50;
+  } else {
+      return 0; 
+  }
+}
 
 
 module.exports = app;
