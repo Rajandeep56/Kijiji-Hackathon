@@ -1,0 +1,15 @@
+.list-container {
+  width: 60%;
+  margin: 0 auto;
+  &__review-count {
+    color: #373373;
+    font-size: 1.25rem;
+    margin-top: 0.563;
+    font-family: 'Larsseit', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+  }
+
+  &__items {
+    margin-top: 2rem;
+  }
+}
