@@ -1,0 +1,18 @@
+[
+  {
+    "typeId": 1,
+    "creditType": "Stars",
+    "cedits": [
+      {
+        "5": 5,
+        "4": 4,
+        "3": 1,
+        "2": 0,
+        "1": -5
+      }
+    ]
+  },
+  { "typeId": 2, "creditType": "Reviews", "cedits": 2 },
+  { "typeId": 3, "creditType": "Refer friends or families", "cedits": 3 },
+  { "typeId": 4, "creditType": "Transaction", "cedits": 5 }
+]
