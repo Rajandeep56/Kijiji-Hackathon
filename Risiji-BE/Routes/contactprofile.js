@@ -79,9 +79,9 @@ app.patch('/:id/incrementTotalReviews', (req, res) => {
 function calculateCredits(averageScore) {
   if (averageScore >= 3.0 && averageScore < 3.5) {
       return 10;
-  } else if (averageScore >= 3.5 && averageScore < 4.8) {
+  } else if (averageScore >= 3.5 && averageScore <=4.5) {
       return 30;
-  } else if (averageScore >= 4.8 && averageScore <=5.0) {
+  } else if (averageScore >= 4.6 && averageScore <=5.0) {
       return 50;
   } else {
       return 0; 

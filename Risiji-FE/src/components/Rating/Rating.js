@@ -40,7 +40,7 @@ const TopBar = ({ userId }) => {
     badgeImage = (
       <img src={silverBadge} alt="silver badge" className="silver-badge" />
     );
-  } else if (credits >= 30 && credits <= 40) {
+  } else if (credits >= 40 && credits <= 50) {
     badgeImage = (
       <img src={goldBadge} alt="gold badge" className="gold-badge" />
     );
