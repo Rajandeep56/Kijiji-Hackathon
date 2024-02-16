@@ -28,11 +28,9 @@ const ReviewList = () => {
       <section className="reviews">
         {reveiwList ? (
           <>
-          <div className='top-bar__user-listing'>
-        <Link to={`/${userId}/Listing`}>
-          Go to Listings
-          </Link>
-      </div>
+            <div className="top-bar__user-listing">
+              <Link to={`/${userId ?? 1001}/Listing`}>Go to Listings</Link>
+            </div>
             <p className="reviews__count">
               {reveiwList?.reviewSummary?.summary?.totalReviews} Reviews
             </p>
@@ -41,7 +39,6 @@ const ReviewList = () => {
                 return <Review review={review} />;
               })}
             </section>
-            
           </>
         ) : (
           <h1>Loading...</h1>
