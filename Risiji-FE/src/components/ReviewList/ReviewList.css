@@ -1,0 +1,14 @@
+.reviews {
+  width: 60%;
+  margin: 0 auto;
+}
+.reviews__count {
+  color: #373373;
+  font-size: 1.25rem;
+  margin-top: 0.563;
+  font-family: "Larsseit", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+.reviews__items {
+  margin-top: 2rem;
+}/*# sourceMappingURL=ReviewList.css.map */
