@@ -42,7 +42,7 @@ const TopBar = ({ userId }) => {
     );
   } else if (credits >= 40 && credits <= 50) {
     badgeImage = (
-      <img src={goldBadge} alt="gold badge" className="gold-badge" />
+      <img src={goldBadge} alt="gold badge" className="gold-badge2" />
     );
   }
   return (
@@ -50,8 +50,13 @@ const TopBar = ({ userId }) => {
       <div className="top-bar">
         <div className="top-bar__content">
           <div className="top-bar__badge-circle">{badgeCircle}</div>
-          <div className="top-bar__notification">
+          {/* <div className="top-bar__notification">
             Level up to Golden Badge just {pointsAway} points away!
+          </div> */}
+          <div className="top-bar__notification">
+            {pointsAway === 0
+              ? 'You are a Gold Badge!'
+              : `Level up to Golden Badge just ${pointsAway} points away!`}
           </div>
           <img src={goldBadge} alt="gold badge" className="gold-badge" />
           {badgeImage}
