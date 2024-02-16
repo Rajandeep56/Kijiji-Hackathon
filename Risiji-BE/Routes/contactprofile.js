@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express.Router();
 const fs = require("fs");
+const { v4: uuidv4 } = require('uuid');
+
 
 const fetchContactInfo = () => {
   const filePath = "./data/user-data.json";
@@ -29,6 +31,8 @@ app.get('/:id', (req, res) => {
     return res.status(200).json(contactMatch);
     
 });
+
+
 app.patch('/:id/incrementTotalReviews', (req, res) => {
     const { id } = req.params;
     const userData = fetchContactInfo();
@@ -40,6 +44,29 @@ app.patch('/:id/incrementTotalReviews', (req, res) => {
     }
 
     userData[userIndex].reviewSummary.summary.totalReviews += 1;
+
+    const dummyReview = {
+        categoryName: "Electronics",
+        dateCreated: Math.floor(Date.now() / 1000),
+        direction: "B2S",
+        feedbackOptions: [],
+        id: uuidv4(), 
+        reviewedBy: {
+            userName: "Risiji User",
+            id: uuidv4(), 
+            userImag: null
+        },
+        score: 5 
+    };
+
+    userData[userIndex].reviewContent.push(dummyReview);
+
+    const allScores = userData[userIndex].reviewContent.map(review => review.score);
+    const totalReviews = userData[userIndex].reviewSummary.summary.totalReviews;
+    console.log(totalReviews, totalReviews)
+    const newAverageScore = allScores.reduce((sum, score) => sum + score, 0) / totalReviews;
+
+    userData[userIndex].reviewSummary.summary.sumScore = parseFloat(newAverageScore.toFixed(1));
 
     fs.writeFileSync('./data/user-data.json', JSON.stringify(userData, null, 2));
 
