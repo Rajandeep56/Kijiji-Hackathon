@@ -11,7 +11,6 @@ const ReviewList = () => {
   const { userId } = useParams();
 
   const getReviewList = async () => {
-    console.log(345);
     const res = await axios.get(
       `http://localhost:8000/contact/${userId ?? 1001}`
     );
@@ -25,7 +24,7 @@ const ReviewList = () => {
 
   return (
     <>
-      <TopBar />
+      <TopBar userId={userId} />
       <section className="reviews">
         {reveiwList ? (
           <>

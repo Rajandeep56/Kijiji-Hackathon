@@ -1,5 +1,4 @@
 .ReviewCard {
-  width: 50%;
   height: 50vh;
   display: flex;
   flex-direction: column;
@@ -7,6 +6,15 @@
   justify-content: center;
   border: 1px solid #d2d3d7;
   border-radius: 10px;
+  background-color: white;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px; /* Need a specific value to work */
 
   &__avatar {
     width: 50px;
